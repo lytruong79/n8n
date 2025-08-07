@@ -123,5 +123,8 @@
       "@lezer/highlight": "patches/@lezer__highlight.patch",
       "v-code-diff": "patches/v-code-diff.patch"
     }
+  },
+  "dependencies": {
+    "n8n-nodes-zalo-tools": "^0.5.11"
   }
 }

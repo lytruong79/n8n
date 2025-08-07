@@ -249,6 +249,10 @@ patchedDependencies:
 importers:
 
   .:
+    dependencies:
+      n8n-nodes-zalo-tools:
+        specifier: ^0.5.11
+        version: 0.5.11(n8n-core@packages+core)(n8n-workflow@packages+workflow)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.0
@@ -12891,6 +12895,13 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
+  n8n-nodes-zalo-tools@0.5.11:
+    resolution: {integrity: sha512-9KjmIOdgzki3jCJS934jjwQlhTtM7ZC3gZ3AT/7XOKxsDHy8LkmpgMSzTFetJMWBqE/nd9wsfcVsTMqfBV1JDg==}
+    engines: {node: '>=18.10', pnpm: '>=9.1'}
+    peerDependencies:
+      n8n-core: '>=1.0.0'
+      n8n-workflow: '>=1.0.0'
+
   named-placeholders@1.1.3:
     resolution: {integrity: sha512-eLoBxg6wE/rZkJPhU/xRX1WTpkFEwDJEN96oxFrTsqBdbT5ec295Q+CoHrL9IT0DipqKhmGcaZmwOt8OON5x1w==}
     engines: {node: '>=12.0.0'}
@@ -12968,6 +12979,9 @@ packages:
 
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
+
+  node-addon-api@6.1.0:
+    resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
 
   node-addon-api@7.1.0:
     resolution: {integrity: sha512-mNcltoe1R8o7STTegSOHdnJNN7s5EUvhoS7ShnTHDyOSd+8H+UdWODq6qSv67PjC8Zc5JRT8+oLAMCr0SIXw7g==}
@@ -13366,6 +13380,9 @@ packages:
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
+  pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
+
   param-case@2.1.1:
     resolution: {integrity: sha512-eQE845L6ot89sk2N8liD8HAuH4ca6Vvr7VWAWwt7+kvvG5aBcPmmphQ68JsEG2qa9n1TykS2DLeMt363AAH8/w==}
 
@@ -13649,6 +13666,11 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+
+  pnpm@10.14.0:
+    resolution: {integrity: sha512-rSenlkG0nD5IGhaoBbqnGBegS74Go40X5g4urug/ahRsamiBJfV5LkjdW6MOfaUqXNpMOZK5zPMz+c4iOvhHSA==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   polished@4.2.2:
     resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==}
@@ -14566,6 +14588,10 @@ packages:
   shallowequal@1.1.0:
     resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
 
+  sharp@0.32.6:
+    resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
+    engines: {node: '>=14.15.0'}
+
   sharp@0.33.5:
     resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -14745,6 +14771,10 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
+
+  spark-md5@3.0.2:
+    resolution: {integrity: sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==}
 
   sparse-bitfield@3.0.3:
     resolution: {integrity: sha512-kvzhi7vqKTfkh0PZU+2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxsgdQab2BmlDct1YnfQCguEvHr7VsQ==}
@@ -16545,6 +16575,10 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+
+  zca-js@2.0.0-beta.25:
+    resolution: {integrity: sha512-zr5525R7MUVyYk3EyCX2qkUiIsIh2VDWKu5b9Hqz9LiBHNhCTtKSkXw3QuuqBL9VzDS405AwEB126Tc7zR4hlA==}
+    engines: {node: '>=18.0.0'}
 
   zip-stream@6.0.1:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
@@ -18674,7 +18708,7 @@ snapshots:
       '@currents/commit-info': 1.0.1-beta.0
       async-retry: 1.3.3
       axios: 1.10.0(debug@4.4.1)
-      axios-retry: 4.5.0(axios@1.10.0(debug@4.4.1))
+      axios-retry: 4.5.0(axios@1.10.0)
       c12: 1.11.2(magicast@0.3.5)
       chalk: 4.1.2
       commander: 12.1.0
@@ -23317,11 +23351,6 @@ snapshots:
 
   axe-core@4.7.2: {}
 
-  axios-retry@4.5.0(axios@1.10.0(debug@4.4.1)):
-    dependencies:
-      axios: 1.10.0(debug@4.4.1)
-      is-retry-allowed: 2.2.0
-
   axios-retry@4.5.0(axios@1.10.0):
     dependencies:
       axios: 1.10.0
@@ -25390,7 +25419,7 @@ snapshots:
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
       is-core-module: 2.16.1
       resolve: 1.22.10
     transitivePeerDependencies:
@@ -25414,7 +25443,7 @@ snapshots:
 
   eslint-module-utils@2.12.1(@typescript-eslint/parser@8.35.0(eslint@9.29.0(jiti@1.21.7))(typescript@5.9.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@4.4.3)(eslint@9.29.0(jiti@1.21.7)):
     dependencies:
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
     optionalDependencies:
       '@typescript-eslint/parser': 8.35.0(eslint@9.29.0(jiti@1.21.7))(typescript@5.9.2)
       eslint: 9.29.0(jiti@1.21.7)
@@ -25453,7 +25482,7 @@ snapshots:
       array.prototype.findlastindex: 1.2.6
       array.prototype.flat: 1.3.3
       array.prototype.flatmap: 1.3.3
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
       doctrine: 2.1.0
       eslint: 9.29.0(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.9
@@ -26412,7 +26441,7 @@ snapshots:
       array-parallel: 0.1.3
       array-series: 0.1.5
       cross-spawn: 7.0.6
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -29110,6 +29139,20 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
+  n8n-nodes-zalo-tools@0.5.11(n8n-core@packages+core)(n8n-workflow@packages+workflow):
+    dependencies:
+      axios: 1.10.0
+      n8n-core: link:packages/core
+      n8n-workflow: link:packages/workflow
+      pnpm: 10.14.0
+      zca-js: 2.0.0-beta.25
+    optionalDependencies:
+      sharp: 0.32.6
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - utf-8-validate
+
   named-placeholders@1.1.3:
     dependencies:
       lru-cache: 7.18.3
@@ -29178,6 +29221,9 @@ snapshots:
       semver: 7.7.2
 
   node-abort-controller@3.1.1: {}
+
+  node-addon-api@6.1.0:
+    optional: true
 
   node-addon-api@7.1.0: {}
 
@@ -29645,6 +29691,8 @@ snapshots:
 
   pako@1.0.11: {}
 
+  pako@2.1.0: {}
+
   param-case@2.1.1:
     dependencies:
       no-case: 2.3.2
@@ -29769,7 +29817,7 @@ snapshots:
 
   pdf-parse@1.1.1:
     dependencies:
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
       node-ensure: 0.0.0
     transitivePeerDependencies:
       - supports-color
@@ -29925,6 +29973,8 @@ snapshots:
       queue-lit: 1.5.0
 
   pluralize@8.0.0: {}
+
+  pnpm@10.14.0: {}
 
   polished@4.2.2:
     dependencies:
@@ -30757,7 +30807,7 @@ snapshots:
 
   rhea@1.0.24:
     dependencies:
-      debug: 3.2.7(supports-color@5.5.0)
+      debug: 3.2.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -31037,6 +31087,18 @@ snapshots:
 
   shallowequal@1.1.0: {}
 
+  sharp@0.32.6:
+    dependencies:
+      color: 4.2.3
+      detect-libc: 2.0.4
+      node-addon-api: 6.1.0
+      prebuild-install: 7.1.3
+      semver: 7.7.2
+      simple-get: 4.0.1
+      tar-fs: 2.1.3
+      tunnel-agent: 0.6.0
+    optional: true
+
   sharp@0.33.5:
     dependencies:
       color: 4.2.3
@@ -31306,6 +31368,8 @@ snapshots:
   source-map@0.8.0-beta.0:
     dependencies:
       whatwg-url: 7.1.0
+
+  spark-md5@3.0.2: {}
 
   sparse-bitfield@3.0.3:
     dependencies:
@@ -33353,6 +33417,20 @@ snapshots:
     dependencies:
       vue: 3.5.13(typescript@5.9.2)
       vue-demi: 0.14.10(vue@3.5.13(typescript@5.9.2))
+
+  zca-js@2.0.0-beta.25:
+    dependencies:
+      crypto-js: 4.2.0
+      form-data: 4.0.4
+      pako: 2.1.0
+      semver: 7.7.2
+      sharp: 0.33.5
+      spark-md5: 3.0.2
+      tough-cookie: 5.1.2
+      ws: 8.18.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   zip-stream@6.0.1:
     dependencies:
